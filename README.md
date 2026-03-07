@@ -59,16 +59,17 @@ Make sure to update the `--ckpt` path in `test.sh` to point to your trained mode
 
 ## 🏰 Pretained Model
 
-| Dataset | Download |
-| ProGAN | [Link](TBD) |
-| SDv1.4 | [Link](TBD) |
+| Dataset | Baidu Netdisk | Google Drive |
+| :--- | :--- | :--- |
+| **ProGAN** | [Link](TBD) | [Link](TBD) |
+| **SDv1.4** | [Link](TBD) | [Link](TBD) |
 
 *(More checkpoints will be released soon.)*
 
 ## 💡 Citation
 If you find this work useful for your research, please consider citing our paper:
 ```bibtex
-@inproceedings{LTD2026,
+@inproceedings{yang2026LTD,
   title={Layer Consistency Matters: Elegant Latent Transition Discrepancy for Generalizable Synthetic Image Detection},
   author={Yang, Yawen and Li, Feng and Kong, Shuqi and Diao, Yunfeng and Gao, Xinjian and Shi, Zenglin and Wang, Meng},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
