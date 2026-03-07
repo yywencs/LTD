@@ -1,0 +1,15 @@
+ftfy==6.3.1
+ipython==8.12.3
+numpy==1.26.4
+opencv-python==4.8.0.74
+Pillow==11.3.0
+regex==2024.11.6
+scikit-learn==1.6.1
+scipy==1.13.1
+setuptools==78.1.1
+scikit-image==0.24.0
+tensorboardX==2.6.4
+torch==2.1.1
+torchvision==0.16.1
+tqdm==4.67.1
+transformers==4.30.2
