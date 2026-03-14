@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**CVPR 2026 Accepted**
+<!-- **CVPR 2026 Accepted** -->
 
 <!-- [**Paper**](link_to_paper) | [**Project Page**](link_to_project) | [**Video**](link_to_video) -->
 
@@ -16,8 +16,8 @@ This repository contains the official implementation of the paper "Layer Consist
   <img src="resources/LTD.png" alt="LTD Framework" width="100%">
 </div>
 
-## 🔈 News
-- **[2026.03]** 🎉 Our paper has been accepted to **CVPR 2026**!
+<!-- ## 🔈 News
+- **[2026.03]** 🎉 Our paper has been accepted to **CVPR 2026**! -->
 
 ## 🛠️ Installation
 
@@ -61,8 +61,8 @@ Make sure to update the `--ckpt` path in `test.sh` to point to your trained mode
 
 | Dataset | Baidu Netdisk | Google Drive |
 | :--- | :--- | :--- |
-| **ProGAN** | [Link](TBD) | [Link](TBD) |
-| **SDv1.4** | [Link](TBD) | [Link](TBD) |
+| **UFD\GenImage** | [Link](TBD) | [Link](TBD) |
+| **DRCT-2M** | [Link](TBD) | [Link](TBD) |
 
 *(More checkpoints will be released soon.)*
 
