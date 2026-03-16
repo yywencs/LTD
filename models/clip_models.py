@@ -45,11 +45,7 @@ class LayerSelector(nn.Module):
         # 为每个可能的起始点设置一个可学习的 logit
         self.logits = nn.Parameter(torch.randn(self.num_choices))
         
-        # --- Gumbel-Softmax 温度退火 ---
         self.cnt = cnt
-        # 在计数字典中为此选择器初始化一个唯一的键
-        if 'selector_step' not in self.cnt:
-             self.cnt['selector_step'] = 0
         
         self.is_training_mode = training # 存储训练标志
         self.initial_tau = initial_tau
@@ -62,11 +58,9 @@ class LayerSelector(nn.Module):
             self.cnt['selector_step'] += 1
             step = self.cnt['selector_step']
             
-            # 简单的线性退火
             ratio = min(1.0, step / self.anneal_steps)
             self.current_tau = self.initial_tau - (self.initial_tau - self.final_tau) * ratio
         else:
-            # 在评估期间，使用一个非常小的 tau 来近似 argmax (确定性选择)
             self.current_tau = self.final_tau 
 
     def forward(self, all_features):
