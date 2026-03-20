@@ -45,7 +45,7 @@ if __name__ == '__main__':
     model = Trainer(opt)
     
     train_dataset = RealFakeDataset(opt)
-    data_loader = create_dataloader(opt, None, train_dataset)
+    data_loader = create_dataloader(opt, None)
     val_loader = create_dataloader(val_opt)
 
 

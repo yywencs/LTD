@@ -1,6 +1,7 @@
 import torch
 import numpy as np
 from torch.utils.data.sampler import WeightedRandomSampler
+from .datasets import RealFakeDataset
 
 
 
@@ -17,8 +18,9 @@ def get_bal_sampler(dataset):
     return sampler
 
 
-def create_dataloader(opt, preprocess=None, dataset=None):
+def create_dataloader(opt, preprocess=None):
     shuffle = not opt.serial_batches if (opt.isTrain and not opt.class_bal) else False
+    dataset = RealFakeDataset(opt)
     if '2b' in opt.arch:
         dataset.transform = preprocess
     sampler = get_bal_sampler(dataset) if opt.class_bal else None

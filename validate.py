@@ -296,7 +296,7 @@ if __name__ == '__main__':
     model.eval()
     model.cuda()
 
-    dataset_paths = UFD
+    dataset_paths = DRCT
 
     rows = []
     mean_acc, mean_ap = [], []
